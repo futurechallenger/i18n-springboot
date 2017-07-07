@@ -1,0 +1,42 @@
+{
+  "name": "i18n-springboot",
+  "version": "0.1.0",
+  "description": "i18n, springboot",
+  "main": "server.js",
+  "dependencies": {
+    "lodash": "^4.15.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.14.0",
+    "eslint-config-airbnb": "^14.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^3.0.2",
+    "eslint-plugin-react": "^6.9.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-cli": "^1.2.2",
+    "gulp-eslint": "^3.0.1",
+    "gulp-sourcemaps": "^2.4.0",
+    "gulp-util": "^3.0.8",
+    "gulp-watch": "^4.3.11"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "build": "./node_modules/.bin/gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/futurechallenger/i18n-springboot.git"
+  },
+  "keywords": [
+    "i18n",
+    "springboot"
+  ],
+  "author": "uncle charlie",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/futurechallenger/i18n-springboot/issues"
+  },
+  "homepage": "https://github.com/futurechallenger/i18n-springboot#readme"
+}
