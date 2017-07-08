@@ -39,7 +39,7 @@ function writeContent(key, rawString) {
     return filePaths;
   })(Config.lang)
 
-  let res = `${key} = ${rawString}; \n`;
+  const res = `${key} = ${rawString}; \n`;
   appendAsync(defaultFile, res);
   otherFiles.forEach((val) => {
     appendAsync(val, res);
@@ -77,7 +77,7 @@ async function parseFile(filePath) {
     const resKey = `msg.${baseName}.${fileName.replace('Controller', '').toLowerCase()}.${lineNum}`;
     writeContent(resKey, rawString);
 
-    const pattern = /[\u4E00-\u9FA5]|[\uFE30-\uFFA0]/gi
+    // const pattern = /[\u4E00-\u9FA5]|[\uFE30-\uFFA0]/gi
     // if (pattern.exec(rawString)) {
     //   console.log('中文');
     // } else {

@@ -1,6 +1,6 @@
 /**
  * Configurations of i18n
- * 
+ *
  * Created by Uncle Charlie, 2017/06/27
  */
 

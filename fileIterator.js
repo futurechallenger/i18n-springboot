@@ -29,12 +29,12 @@ async function iterate(dir, files, fileParser) {
     return;
   }
 
-  for (let file of files) {
-    if (file.indexOf(".") == 0) {
+  for (const file of files) {
+    if (file.indexOf('.') === 0) {
       continue;
     }
 
-    let filePath = path.join(dir, file);
+    const filePath = path.join(dir, file);
     console.log(` path: ${filePath}`);
 
     const stats = await fsState(filePath);
@@ -43,10 +43,10 @@ async function iterate(dir, files, fileParser) {
       fileParser(filePath);
     } else if (stats.isDirectory()) {
       console.log(`dir path: ${filePath}`);
-      let files = await readDirAsync(filePath);
-      iterate(filePath, files, fileParser);
+      const subFiles = await readDirAsync(filePath);
+      iterate(filePath, subFiles, fileParser);
     }
-  };
+  }
 }
 
 async function startParse(fileParser) {
